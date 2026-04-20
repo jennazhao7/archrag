@@ -1,0 +1,18 @@
+# Python
+__pycache__/
+*.pyc
+
+# Local runtime/cache artifacts
+data/hf_home/
+data/fhe_runtime*/
+data/raw/scifact/data.tar.gz
+
+# Export scratch outputs (keep folder, ignore generated files)
+data/exported/*/
+
+# Legacy scratch export dirs
+data/arch_bench_sample/
+data/arch_bench_sample_bin/
+
+# Architecture build outputs
+arch/build/
