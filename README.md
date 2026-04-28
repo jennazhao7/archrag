@@ -125,6 +125,10 @@ Each binary prints elapsed time and a checksum.
 - Track cycles, IPC, cache misses, and memory stall behavior
 - Vary `N`, `K`, and `d` to study scaling trends
 
+For the final plaintext/FHE architecture simulation split, see:
+
+- `docs/ARCH_SIM_SCAN_README.md`
+
 ## Design Notes
 
 - The dataset and exported benchmark sizes are intentionally small to keep simulator runs practical.
