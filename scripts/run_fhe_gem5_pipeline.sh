@@ -40,6 +40,8 @@ Important environment variables:
                            1 uses QUERY_EMBEDDINGS instead of loading HF model (default: 1)
   OPENFHE_BATCH_SIZE       OpenFHE distance batch size (default: 1)
   OPENFHE_NUM_THREADS      OpenFHE distance threads (default: 1)
+  OPENFHE_GEM5_ROI         1 to measure only the distance loop with gem5
+                           reset/dump hooks (default: 1)
   OPENFHE_PARAM_PRESET     standard or toy (default: standard)
                            toy tries smaller params; may be rejected by OpenFHE
   RUN_NATIVE_VERIFY        1 to run full native FHE/plaintext verification first (default: 0)
@@ -94,6 +96,7 @@ CENTROID_START="${CENTROID_START:-0}"
 CENTROID_INDICES="${CENTROID_INDICES:-}"
 OPENFHE_BATCH_SIZE="${OPENFHE_BATCH_SIZE:-1}"
 OPENFHE_NUM_THREADS="${OPENFHE_NUM_THREADS:-1}"
+OPENFHE_GEM5_ROI="${OPENFHE_GEM5_ROI:-1}"
 OPENFHE_PARAM_PRESET="${OPENFHE_PARAM_PRESET:-standard}"
 if [[ "$OPENFHE_PARAM_PRESET" == "toy" ]]; then
   OPENFHE_POLY_MODULUS_DEGREE="${OPENFHE_POLY_MODULUS_DEGREE:-8192}"
@@ -141,6 +144,7 @@ fi
 echo "gem5 max instructions: $GEM5_MAXINSTS"
 echo "gem5 cpu type: $GEM5_CPU_TYPE"
 echo "gem5 caches: L1=$GEM5_ENABLE_CACHES L2=$GEM5_ENABLE_L2 extra_args=${GEM5_EXTRA_ARGS:-none}"
+echo "gem5 ROI stats: $OPENFHE_GEM5_ROI"
 echo "OpenFHE params: preset=$OPENFHE_PARAM_PRESET ring_dim=$OPENFHE_POLY_MODULUS_DEGREE coeff_bits=$OPENFHE_COEFF_MOD_BIT_SIZES"
 if [[ "$OPENFHE_PARAM_PRESET" == "toy" ]]; then
   echo "note: toy params are for simulation experiments only and may be rejected by this OpenFHE build."
@@ -272,6 +276,7 @@ OPENFHE_ENCRYPTED_NORM="$OPENFHE_ENCRYPTED_NORM" \
 OPENFHE_OUTPUT_DIR="$OPENFHE_OUTPUT_DIR" \
 OPENFHE_BATCH_SIZE="$OPENFHE_BATCH_SIZE" \
 OPENFHE_NUM_THREADS="$OPENFHE_NUM_THREADS" \
+OPENFHE_GEM5_ROI="$OPENFHE_GEM5_ROI" \
 scripts/run_gem5_openfhe.sh
 
 echo

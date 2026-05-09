@@ -1,0 +1,11 @@
+{
+  "kernel": "fhe_rns_distance_kernel",
+  "ring_dim": 16384,
+  "towers": 4,
+  "query_elements": 2,
+  "norm_elements": 2,
+  "centroid_dim": 384,
+  "repeats": 1,
+  "checksum": 1908798588256402718,
+  "wall_seconds": 0.400259
+}

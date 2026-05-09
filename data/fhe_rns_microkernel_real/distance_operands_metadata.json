@@ -1,0 +1,10 @@
+{
+  "format": "FHERNS1",
+  "ring_dim": 16384,
+  "towers": 4,
+  "query_elements": 2,
+  "norm_elements": 2,
+  "centroid_dim": 384,
+  "centroid_norm": 0.495698,
+  "moduli": [1152921504606748673, 1099510054913, 1099511922689, 557057]
+}

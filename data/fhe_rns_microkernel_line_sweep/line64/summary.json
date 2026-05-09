@@ -1,0 +1,192 @@
+{
+  "runs": [
+    {
+      "config": "l1_l2",
+      "trial": 1,
+      "repeats": 1,
+      "stats": "m5out/fhe_rns_microkernel_line_sweep/line64/l1_l2_r1_trial1/stats.txt",
+      "kernel_output": "data/fhe_rns_microkernel_line_sweep/line64/kernel_output_l1_l2_trial1.json",
+      "simSeconds": 0.400258,
+      "simTicks": 400258260500.0,
+      "hostSeconds": 331.71,
+      "simInsts": 399026829.0,
+      "system.cpu.numCycles": 800516591.0,
+      "system.cpu.cpi": 2.006172,
+      "system.cpu.ipc": 0.498462,
+      "system.cpu.dcache.overallMisses::total": 738050.0,
+      "system.cpu.dcache.overallAccesses::total": 237574143.0,
+      "system.cpu.dcache.overallMissRate::total": 0.003107,
+      "system.cpu.icache.overallMisses::total": 162.0,
+      "system.cpu.icache.overallAccesses::total": 543530160.0,
+      "system.cpu.icache.overallMissRate::total": 0.0,
+      "system.l2.overallMisses::total": 566732.0,
+      "system.l2.overallAccesses::total": 738212.0,
+      "system.l2.overallMissRate::total": 0.767709,
+      "stats_blocks": 2.0
+    },
+    {
+      "config": "l1_l2",
+      "trial": 2,
+      "repeats": 1,
+      "stats": "m5out/fhe_rns_microkernel_line_sweep/line64/l1_l2_r1_trial2/stats.txt",
+      "kernel_output": "data/fhe_rns_microkernel_line_sweep/line64/kernel_output_l1_l2_trial2.json",
+      "simSeconds": 0.400258,
+      "simTicks": 400258260500.0,
+      "hostSeconds": 332.38,
+      "simInsts": 399026829.0,
+      "system.cpu.numCycles": 800516591.0,
+      "system.cpu.cpi": 2.006172,
+      "system.cpu.ipc": 0.498462,
+      "system.cpu.dcache.overallMisses::total": 738050.0,
+      "system.cpu.dcache.overallAccesses::total": 237574143.0,
+      "system.cpu.dcache.overallMissRate::total": 0.003107,
+      "system.cpu.icache.overallMisses::total": 162.0,
+      "system.cpu.icache.overallAccesses::total": 543530160.0,
+      "system.cpu.icache.overallMissRate::total": 0.0,
+      "system.l2.overallMisses::total": 566732.0,
+      "system.l2.overallAccesses::total": 738212.0,
+      "system.l2.overallMissRate::total": 0.767709,
+      "stats_blocks": 2.0
+    },
+    {
+      "config": "l1_l2",
+      "trial": 3,
+      "repeats": 1,
+      "stats": "m5out/fhe_rns_microkernel_line_sweep/line64/l1_l2_r1_trial3/stats.txt",
+      "kernel_output": "data/fhe_rns_microkernel_line_sweep/line64/kernel_output_l1_l2_trial3.json",
+      "simSeconds": 0.400258,
+      "simTicks": 400258260500.0,
+      "hostSeconds": 322.09,
+      "simInsts": 399026829.0,
+      "system.cpu.numCycles": 800516591.0,
+      "system.cpu.cpi": 2.006172,
+      "system.cpu.ipc": 0.498462,
+      "system.cpu.dcache.overallMisses::total": 738050.0,
+      "system.cpu.dcache.overallAccesses::total": 237574143.0,
+      "system.cpu.dcache.overallMissRate::total": 0.003107,
+      "system.cpu.icache.overallMisses::total": 162.0,
+      "system.cpu.icache.overallAccesses::total": 543530160.0,
+      "system.cpu.icache.overallMissRate::total": 0.0,
+      "system.l2.overallMisses::total": 566732.0,
+      "system.l2.overallAccesses::total": 738212.0,
+      "system.l2.overallMissRate::total": 0.767709,
+      "stats_blocks": 2.0
+    }
+  ],
+  "groups": {
+    "l1_l2": {
+      "simSeconds": {
+        "n": 3,
+        "mean": 0.400258,
+        "stdev": 0.0,
+        "min": 0.400258,
+        "max": 0.400258
+      },
+      "simTicks": {
+        "n": 3,
+        "mean": 400258260500.0,
+        "stdev": 0.0,
+        "min": 400258260500.0,
+        "max": 400258260500.0
+      },
+      "hostSeconds": {
+        "n": 3,
+        "mean": 328.72666666666663,
+        "stdev": 5.75727655522413,
+        "min": 322.09,
+        "max": 332.38
+      },
+      "simInsts": {
+        "n": 3,
+        "mean": 399026829.0,
+        "stdev": 0.0,
+        "min": 399026829.0,
+        "max": 399026829.0
+      },
+      "system.cpu.numCycles": {
+        "n": 3,
+        "mean": 800516591.0,
+        "stdev": 0.0,
+        "min": 800516591.0,
+        "max": 800516591.0
+      },
+      "system.cpu.cpi": {
+        "n": 3,
+        "mean": 2.006172,
+        "stdev": 0.0,
+        "min": 2.006172,
+        "max": 2.006172
+      },
+      "system.cpu.ipc": {
+        "n": 3,
+        "mean": 0.498462,
+        "stdev": 0.0,
+        "min": 0.498462,
+        "max": 0.498462
+      },
+      "system.cpu.dcache.overallAccesses::total": {
+        "n": 3,
+        "mean": 237574143.0,
+        "stdev": 0.0,
+        "min": 237574143.0,
+        "max": 237574143.0
+      },
+      "system.cpu.dcache.overallMisses::total": {
+        "n": 3,
+        "mean": 738050.0,
+        "stdev": 0.0,
+        "min": 738050.0,
+        "max": 738050.0
+      },
+      "system.cpu.dcache.overallMissRate::total": {
+        "n": 3,
+        "mean": 0.003107,
+        "stdev": 0.0,
+        "min": 0.003107,
+        "max": 0.003107
+      },
+      "system.cpu.icache.overallAccesses::total": {
+        "n": 3,
+        "mean": 543530160.0,
+        "stdev": 0.0,
+        "min": 543530160.0,
+        "max": 543530160.0
+      },
+      "system.cpu.icache.overallMisses::total": {
+        "n": 3,
+        "mean": 162.0,
+        "stdev": 0.0,
+        "min": 162.0,
+        "max": 162.0
+      },
+      "system.cpu.icache.overallMissRate::total": {
+        "n": 3,
+        "mean": 0.0,
+        "stdev": 0.0,
+        "min": 0.0,
+        "max": 0.0
+      },
+      "system.l2.overallAccesses::total": {
+        "n": 3,
+        "mean": 738212.0,
+        "stdev": 0.0,
+        "min": 738212.0,
+        "max": 738212.0
+      },
+      "system.l2.overallMisses::total": {
+        "n": 3,
+        "mean": 566732.0,
+        "stdev": 0.0,
+        "min": 566732.0,
+        "max": 566732.0
+      },
+      "system.l2.overallMissRate::total": {
+        "n": 3,
+        "mean": 0.767709,
+        "stdev": 0.0,
+        "min": 0.767709,
+        "max": 0.767709
+      }
+    }
+  }
+}

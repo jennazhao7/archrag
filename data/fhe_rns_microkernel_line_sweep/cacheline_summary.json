@@ -1,0 +1,202 @@
+{
+  "runs": [
+    {
+      "cacheline_size": 32,
+      "simInsts": {
+        "n": 3,
+        "mean": 399026829.0,
+        "stdev": 0.0,
+        "min": 399026829.0,
+        "max": 399026829.0
+      },
+      "system.cpu.numCycles": {
+        "n": 3,
+        "mean": 800516591.0,
+        "stdev": 0.0,
+        "min": 800516591.0,
+        "max": 800516591.0
+      },
+      "system.cpu.cpi": {
+        "n": 3,
+        "mean": 2.006172,
+        "stdev": 0.0,
+        "min": 2.006172,
+        "max": 2.006172
+      },
+      "system.cpu.ipc": {
+        "n": 3,
+        "mean": 0.498462,
+        "stdev": 0.0,
+        "min": 0.498462,
+        "max": 0.498462
+      },
+      "system.cpu.dcache.overallMissRate::total": {
+        "n": 3,
+        "mean": 0.006120999999999999,
+        "stdev": 0.0,
+        "min": 0.006121,
+        "max": 0.006121
+      },
+      "system.l2.overallAccesses::total": {
+        "n": 3,
+        "mean": 1454378.0,
+        "stdev": 0.0,
+        "min": 1454378.0,
+        "max": 1454378.0
+      },
+      "system.l2.overallMisses::total": {
+        "n": 3,
+        "mean": 1133381.0,
+        "stdev": 0.0,
+        "min": 1133381.0,
+        "max": 1133381.0
+      },
+      "system.l2.overallMissRate::total": {
+        "n": 3,
+        "mean": 0.779289,
+        "stdev": 0.0,
+        "min": 0.779289,
+        "max": 0.779289
+      },
+      "hostSeconds": {
+        "n": 3,
+        "mean": 337.4866666666667,
+        "stdev": 3.951333108374101,
+        "min": 333.93,
+        "max": 341.74
+      }
+    },
+    {
+      "cacheline_size": 64,
+      "simInsts": {
+        "n": 3,
+        "mean": 399026829.0,
+        "stdev": 0.0,
+        "min": 399026829.0,
+        "max": 399026829.0
+      },
+      "system.cpu.numCycles": {
+        "n": 3,
+        "mean": 800516591.0,
+        "stdev": 0.0,
+        "min": 800516591.0,
+        "max": 800516591.0
+      },
+      "system.cpu.cpi": {
+        "n": 3,
+        "mean": 2.006172,
+        "stdev": 0.0,
+        "min": 2.006172,
+        "max": 2.006172
+      },
+      "system.cpu.ipc": {
+        "n": 3,
+        "mean": 0.498462,
+        "stdev": 0.0,
+        "min": 0.498462,
+        "max": 0.498462
+      },
+      "system.cpu.dcache.overallMissRate::total": {
+        "n": 3,
+        "mean": 0.003107,
+        "stdev": 0.0,
+        "min": 0.003107,
+        "max": 0.003107
+      },
+      "system.l2.overallAccesses::total": {
+        "n": 3,
+        "mean": 738212.0,
+        "stdev": 0.0,
+        "min": 738212.0,
+        "max": 738212.0
+      },
+      "system.l2.overallMisses::total": {
+        "n": 3,
+        "mean": 566732.0,
+        "stdev": 0.0,
+        "min": 566732.0,
+        "max": 566732.0
+      },
+      "system.l2.overallMissRate::total": {
+        "n": 3,
+        "mean": 0.767709,
+        "stdev": 0.0,
+        "min": 0.767709,
+        "max": 0.767709
+      },
+      "hostSeconds": {
+        "n": 3,
+        "mean": 328.72666666666663,
+        "stdev": 5.75727655522413,
+        "min": 322.09,
+        "max": 332.38
+      }
+    },
+    {
+      "cacheline_size": 128,
+      "simInsts": {
+        "n": 3,
+        "mean": 399026829.0,
+        "stdev": 0.0,
+        "min": 399026829.0,
+        "max": 399026829.0
+      },
+      "system.cpu.numCycles": {
+        "n": 3,
+        "mean": 800516591.0,
+        "stdev": 0.0,
+        "min": 800516591.0,
+        "max": 800516591.0
+      },
+      "system.cpu.cpi": {
+        "n": 3,
+        "mean": 2.006172,
+        "stdev": 0.0,
+        "min": 2.006172,
+        "max": 2.006172
+      },
+      "system.cpu.ipc": {
+        "n": 3,
+        "mean": 0.498462,
+        "stdev": 0.0,
+        "min": 0.498462,
+        "max": 0.498462
+      },
+      "system.cpu.dcache.overallMissRate::total": {
+        "n": 3,
+        "mean": 0.001614,
+        "stdev": 0.0,
+        "min": 0.001614,
+        "max": 0.001614
+      },
+      "system.l2.overallAccesses::total": {
+        "n": 3,
+        "mean": 383647.0,
+        "stdev": 0.0,
+        "min": 383647.0,
+        "max": 383647.0
+      },
+      "system.l2.overallMisses::total": {
+        "n": 3,
+        "mean": 283424.0,
+        "stdev": 0.0,
+        "min": 283424.0,
+        "max": 283424.0
+      },
+      "system.l2.overallMissRate::total": {
+        "n": 3,
+        "mean": 0.738762,
+        "stdev": 0.0,
+        "min": 0.738762,
+        "max": 0.738762
+      },
+      "hostSeconds": {
+        "n": 3,
+        "mean": 328.50333333333333,
+        "stdev": 5.351825233818231,
+        "min": 324.34,
+        "max": 334.54
+      }
+    }
+  ]
+}

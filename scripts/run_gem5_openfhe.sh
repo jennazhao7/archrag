@@ -25,6 +25,8 @@ gem5/OpenFHE configuration:
                           (default: $OPENFHE_BIN_DIR/openfhe_compute_distances)
   OPENFHE_BATCH_SIZE      Batch size (default: 64)
   OPENFHE_NUM_THREADS     Optional thread count (>0 adds --num-threads)
+  OPENFHE_GEM5_ROI        1 to reset/dump gem5 stats around only the distance
+                          loop inside the OpenFHE binary (default: 0)
   GEM5_CPU_TYPE           CPU type (default: AtomicSimpleCPU)
   GEM5_MEM_SIZE           Memory size (default: 4GB)
   GEM5_ENABLE_CACHES      1 to pass --caches (default: 1)
@@ -110,6 +112,7 @@ OPENFHE_BIN_DIR="${OPENFHE_BIN_DIR:-bin/openfhe}"
 OPENFHE_COMPUTE_BIN="${OPENFHE_COMPUTE_BIN:-$OPENFHE_BIN_DIR/openfhe_compute_distances}"
 OPENFHE_BATCH_SIZE="${OPENFHE_BATCH_SIZE:-64}"
 OPENFHE_NUM_THREADS="${OPENFHE_NUM_THREADS:-0}"
+OPENFHE_GEM5_ROI="${OPENFHE_GEM5_ROI:-0}"
 
 OPENFHE_CONTEXT_DIR="${OPENFHE_CONTEXT_DIR:-}"
 OPENFHE_CENTROIDS_FILE="${OPENFHE_CENTROIDS_FILE:-}"
@@ -162,6 +165,9 @@ mkdir -p "$GEM5_OUTDIR"
 WORKLOAD_OPTIONS="--context-dir $OPENFHE_CONTEXT_DIR --centroids-file $OPENFHE_CENTROIDS_FILE --encrypted-query $OPENFHE_ENCRYPTED_QUERY --encrypted-norm $OPENFHE_ENCRYPTED_NORM --output-dir $OPENFHE_OUTPUT_DIR --batch-size $OPENFHE_BATCH_SIZE"
 if [[ "$OPENFHE_NUM_THREADS" =~ ^[0-9]+$ ]] && [[ "$OPENFHE_NUM_THREADS" -gt 0 ]]; then
   WORKLOAD_OPTIONS="$WORKLOAD_OPTIONS --num-threads $OPENFHE_NUM_THREADS"
+fi
+if [[ "$OPENFHE_GEM5_ROI" == "1" ]]; then
+  WORKLOAD_OPTIONS="$WORKLOAD_OPTIONS --gem5-roi 1"
 fi
 
 CMD=(
